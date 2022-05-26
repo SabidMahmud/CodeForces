@@ -6,9 +6,10 @@ while n > 0 :
     i = 1
     while i < len(b)-1 :
         if b[i] == b[i+1] :
-            b.pop(i)
+            # b.pop(i)
+            #or
+            del b[i]
+            # print( b )
         i += 1
-        # print( b )
 
     print( "".join(b) )
-
